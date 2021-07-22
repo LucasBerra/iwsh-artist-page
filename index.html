@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iwsh - Homepage</title>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+  <script src="https://kit.fontawesome.com/56253962f5.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="./scss/index.css">
+  <link rel="preload" as="image" href="./assets/iwsh-header-photo.jpg">
+
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <header>
+    <div class="width-limiter">
+      <div class="header-menu-mobile">
+        <li class="dropdown ">
+          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#discography">Discography</a></li>
+            <li><a class="dropdown-item" href="#streaming">Streaming</a></li>
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+          </ul>
+        </li>
+      </div>
+
+      <ul class="header-menu-desktop">
+        <li><a class="nav-item" href="#discography">Discography</a></li>
+        <li><a class="nav-item" href="#streaming">Streaming</a></li>
+        <li><a class="nav-item" href="#contact">Contact</a></li>
+      </ul>
+
+      <br><br class="d-none d-md-block"><br class="d-none d-md-block">
+      <div class="iwsh-name-container">
+        <span class="iwsh-name">Iwsh</span>
+      </div>
+
+      <div class="iwsh-text-container">
+        <h1 class="iwsh-text">Satisfying noise maker.</h1>
+      </div>
+
+      
+      <div class="iwsh-photo-container">
+        <img src="./assets/iwsh-header-photo.jpg" alt="Iwsh photo" class="iwsh-photo">
+      </div>
+    </div>
+  </header>
+  
+  
+  <p class="h6 width-limiter">Lautaro is a guitar player and artist based in Buenos Aires, Argentina. Having played in various bands throughout his life, he's now making his own personal brand of music.</p>
+
+
+  <section id="discography" class="width-limiter">
+    <h2>Discography</h2>
+    <div class="d-flex flex-row flex-wrap justify-content-center align-content-center gap-3 gap-md-5 p-2 pt-3">
+      <a class="link-dark text-decoration-none">
+        <figure>
+          <iframe src="https://bandcamp.com/EmbeddedPlayer/album=176094150/size=large/bgcol=ffffff/linkcol=7137dc/minimal=true/transparent=true/" seamless><a href="https://boulogneviolento.bandcamp.com/album/all-over-again">All Over Again by Iwsh</a></iframe>
+          <figcaption class="text-center align-middle">All Over Again</figcaption>
+        </figure>
+      </a>
+      
+      <a class="link-dark text-decoration-none">
+        <figure>
+          <iframe src="https://bandcamp.com/EmbeddedPlayer/album=770589367/size=large/bgcol=ffffff/linkcol=7137dc/minimal=true/transparent=true/" seamless><a href="https://boulogneviolento.bandcamp.com/album/screens">Screens by Iwsh</a></iframe>
+          <figcaption class="text-center align-middle">Screens</figcaption>
+        </figure>
+      </a>
+
+      <a href="https://open.spotify.com/album/69jQtvhx9gbLyJfkh3uFbE?si=8qTlS6_xSdiLGTHulxpd_w&dl_branch=1" target="_blank" class="link-dark text-decoration-none">
+        <figure>
+          <img src="/assets/discography/cover3_back-and-forth.jpg" alt="Back and forth cover">
+          <figcaption class="text-center align-middle">Back and Forth</figcaption>
+        </figure>
+      </a>
+
+      <a href="https://open.spotify.com/album/2jOmrlc5eHlHjV1a1UVPrq?si=DYcgMMDZRPOCB6O28tdtQg&dl_branch=1" target="_blank" class="link-dark text-decoration-none">
+        <figure>
+          <img src="/assets/discography/cover4_mellow.jpg" alt="Mellow cover">
+          <figcaption class="text-center align-middle">Mellow [single]</figcaption>
+        </figure>
+      </a>
+    </div>
+  </section>
+
+  <section id="streaming" class="width-limiter"> 
+    <h2>Streaming</h2>
+    <div id="streaming-flex" class="d-flex flex-column flex-md-row flex-wrap justify-content-evenly gap-4">
+      <div id="streaming-flex-item">
+        <h3>Spotify:</h3>
+        <iframe id="streaming-spotify" src="https://open.spotify.com/embed/artist/2yBoecZfg7QVPF9FxaH65b" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div id="streaming-flex-item">
+        <h3>Soundcloud:</h3>
+        <div id="streaming-soundcloud" class="d-flex flex-column flex-sm-row flex-md-column justify-content-evenly">
+          <iframe height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/888926830&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+          <br class="d-sm-none d-md-block">
+          <iframe height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/927622210&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="width-limiter">
+    <h2>Contact</h2>
+    <p>Send me a message and I'll reach out to you.</p>
+    <div id="contact-flex" class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-5">
+      <form name="contact-form" method="POST" netlify>
+        <input type="text" name="name" id="form-name" placeholder="What's your name?" class="d-block">
+        <input type="email" name="email" id="form-email" placeholder="Your email, please" class="d-block">
+        <textarea name="message" id="form-message" cols="26" rows="5" placeholder="-Your message here-" class="d-block"></textarea>
+        <input type="submit" value="Send message">
+      </form>
+
+      <div>
+        <p>Otherwise, you can email me:</p>
+        <i class="fas fa-envelope"></i> <span>iwsh.music@gmail.com</span>
+        
+      </div>
+    </div>
+
+    <footer></footer>
+      <div id="contact-links" class="d-flex justify-content-center align-items-center gap-3">
+        <a href="https://open.spotify.com/artist/2yBoecZfg7QVPF9FxaH65b" target="_blank"><i class="fab fa-spotify" id="link-spotify"></i></a>
+        <a href="https://soundcloud.com/iwsh" target="_blank"><div class="rounded-circle" id="link-soundcloud"><i class="fab fa-soundcloud display-6"></i></div></a>
+        <a href="https://www.instagram.com/lauchacaballero/" target="_blank"><div class="rounded-circle" id="link-instagram"><i class="fab fa-instagram display-6"></i></div></a>
+        <a href="https://boulogneviolento.bandcamp.com/" target="_blank"><i class="fab fa-bandcamp" id="link-bandcamp"></i></a>
+      </div>
+
+      <p class="text-center" id="copyright">© Copyright 2021 / Lucas Santiago Berra, Bs.As.</p>
+    </footer>
+  </section>
+</body>
+</html>
