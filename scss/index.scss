@@ -6,11 +6,12 @@ body {
   font-size: 16px;
   font-weight: 600;
   background-color: rgb(26, 26, 26);
+  z-index: 1;
 }
 
 .width-limiter {
   margin: 0 auto;
-  max-width: 2000px;
+  max-width: 1550px;
 }
 
 /********** HEADER **********/
@@ -18,7 +19,7 @@ body {
 header {
   width: 100%;
   height: auto;
-  background: linear-gradient(360deg, rgba(241, 235, 89 , 0.3), rgba(162, 26, 189, 0.3));
+  background: linear-gradient(360deg, rgba(241, 235, 89 , 0.3), rgba(162, 8, 189, 0.3));
   box-shadow: rgb(20, 20, 20) 0px 4px 15px;
   a {
     padding: 0 9px 0 5px;
@@ -132,8 +133,8 @@ header {
 .iwsh-photo {
   border-radius: 5px;
   display: relative;
-  height: 150px;
-  width: 150px;
+  height: 140px;
+  width: 140px;
   display: block;
   margin: -30px auto 0;
   box-shadow: rgb(20, 20, 20) 0px 4px 10px;
@@ -146,7 +147,7 @@ header {
     margin: 28px 56px 28px 0;
   }
   .iwsh-name {
-    font-size: 60px;
+    font-size: 50px;
   }
   .iwsh-text {
     padding: 20px 30px;
@@ -158,20 +159,21 @@ header {
 
 @media (min-width: 991.98px) {
   .iwsh-name {
-    font-size: 80px;
+    font-size: 60px;
   }
   .iwsh-text {
-    font-size: 24px;
+    font-size: 20px;
   }
   .iwsh-photo {
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
     margin-top: -80px;
+    margin-left: 80px;
   }
 }
 
 .h6 {
-  padding: 100px 40px 20px;
+  padding: 100px 40px 40px;
   background-color: rgb(223, 223, 223);
   margin: 0 auto;
   text-indent: 16px;
@@ -184,13 +186,12 @@ header {
   .h6 {
     padding: 100px 80px 20px;
     line-height: 28px;
-    text-align: left;
   }
 }
 
 @media (min-width: 991.98px) {
   .h6 {
-    padding: 100px 120px 20px;
+    padding: 100px 180px 20px;
   }
 }
 
@@ -202,21 +203,26 @@ section {
 
 @media (min-width: 767.98px) {
   section {
-    padding: 10px 45px;
+    padding: 10px 36px;
   }
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: 1199.98px) {
   section {
-    padding: 10px 90px;
+    padding: 10px 50px;
   }
 }
 
 h2 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   border-left: 3px solid;
   padding-left: 8px;
+}
+
+p {
+  font-size: 14px;
+  padding: 6px 20px;
 }
 
 /***** DISCOGRAPHY *****/
@@ -238,53 +244,37 @@ h2 {
     box-shadow: black 0 0 5px;
     margin: 0;
   }
-  .soon {
-    width: 38vw;
-    height: 38vw;
-    border-radius: 5px;
-    font-size: 24vw;
-    text-align: center;
-    box-shadow: black 0 0 5px;
-  }
 }
 
 @media (min-width: 575.98px) {
   #discography img {
-    width: 160px;
+    width: 140px;
   }
-
-  #discography .soon {
-    width: 160px;
-    height: 160px;
-    font-size: 100px;
+  #discography iframe {
+    width: 140px;
+    height: 140px;
   }
 }
 
 @media (min-width: 767.98px) {
   #discography img {
-    width: 160px;
+    width: 140px;
   }
 
   #discography iframe {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
   }
 }
 
 @media (min-width: 991.98px) {
   #discography img {
-    width: 180px;
+    width: 140px;
   }
 
   #discography iframe {
-    width: 180px;
-    height: 180px;
-  }
-
-  #discography .soon {
-    width: 180px;
-    height: 180px;
-    font-size: 100px;
+    width: 160px;
+    height: 160px;
   }
 }
 
@@ -304,8 +294,8 @@ figcaption {
 /***** STREAMING *****/
 
 #streaming {
-  background-color: rgb(170, 170, 170);
-  border: 10px solid rgb(170, 170, 170);
+  background-color: rgb(190, 190, 190);
+  border: 10px solid rgb(190, 190, 190);
   h3 {
     font-weight: 600;
   }
@@ -317,8 +307,9 @@ figcaption {
 }
 
 #streaming-flex-item {
-  border-top: 2px solid;
+  border-radius: 5px;
   width: 100%;
+  background-color: rgba($color: #FFFFFF, $alpha: 0.4);
 }
 
 #streaming-spotify {
@@ -333,11 +324,14 @@ figcaption {
 @media (min-width: 575.98px) and (max-width: 767.98px) {
   #streaming-spotify {
     width: 100%;
-    height: 210px;
+    height: 200px;
   }
   #streaming-soundcloud {
+    display:flex;
+    justify-content: center;
     iframe {
-      width: 48.5%;
+      width: 49.8%;
+      height: 126px;
     }
   }
 }
@@ -348,11 +342,24 @@ figcaption {
     padding: 20px 0;
   }
   #streaming-flex-item {
-    width: 38%;
+    width: 48%;
+    max-width: 700px;
+    height: fit-content;
   }
   #streaming-spotify {
     width: 100%;
-    height: 355px;
+    height: 300px;
+  }
+  #streaming-soundcloud {
+    iframe {
+      height: 138px;
+    }
+  }
+}
+
+@media (min-width: 991.98px) {
+  #streaming-flex-item {
+    padding: 0 6px;
   }
 }
 
@@ -367,12 +374,16 @@ h3 {
 
 #contact {
   color: lightgray;
+  background-color: rgb(26, 26, 26);
   border: 10px solid rgb(26, 26, 26);
 }
 
 #contact-flex {
   max-width: 800px;
   margin: 0 auto;
+  input, textarea {
+    font-size: 14px;
+  }
 }
 
 form {
@@ -393,7 +404,7 @@ input[type=submit] {
 }
 
 #contact-links {
-  margin: 40px 0 36px;
+  margin: 40px 0 16px;
   a {
     text-decoration: none;
     color: lightgray;
@@ -410,7 +421,6 @@ input[type=submit] {
   height: 49px;
   font-size: 1rem;
   text-align: center;
-
   transform: scale(0.85);
 }
 
@@ -433,7 +443,7 @@ input[type=submit] {
 
 #copyright {
   color: rgb(121, 121, 121);
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   padding: 0;
   margin: 0;
 }
